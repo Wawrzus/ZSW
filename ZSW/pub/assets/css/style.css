@@ -1,0 +1,246 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+
+}
+
+.all
+{
+    background-image: url("../image/zsw-banner.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 107% 107%;
+    width: 100vw;
+    height: 115vh;
+    overflow-y: hidden;
+}
+
+.up-navbar
+{
+    width: 100%;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.up-navbar-left
+{
+    height: auto;
+    width: 50%;
+    display: flex;
+    padding: 3rem;
+    gap: 20px;
+}
+
+.up-navbar-right
+{
+    height: auto;
+    width: 50%;
+}
+
+#home-logo
+{
+    width: 32px;
+    height: 32px;
+}
+
+#menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+#menu > li
+{
+    border-bottom: solid 4px white;
+    font-size: 1vw;
+}
+
+#menu > li:hover
+{
+    color: #DA4525;
+    cursor: pointer;
+    border-bottom: solid 4px #DA4525;
+    transition-duration: 0.3s;
+}
+
+.mid-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 100%;
+}
+
+.mid-section-left
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.mid-section-right
+{
+    height: 100%;
+    width: 50%;
+}
+
+.down-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 42%;
+    gap: 12px;
+}
+
+.down-section-zakres, .down-section-onas, .down-section-dopobrania
+{
+    width: 17vw;
+    height: 10vw;
+    background-color: white;
+    text-align: center;
+    border: solid #1D1D1D 1px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#svg-icon
+{
+    width: 5vw;
+    height: 5vw;
+}
+
+.ikona
+{
+    width: 100%;
+    height: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tekst
+{
+    width: 100%;
+    height: 19%;
+    text-align: center;
+}
+
+.tekst-small
+{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.tekst > p
+{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.tekst-small > p
+{
+    font-size: 0.5vw;
+    font-weight: 400;
+    color: #9B9B9B;
+}
+
+.mid-section-left-headline > h1
+{
+    font-size: 3.5vw;
+    font-family: 'Poppins', sans-serif;
+    line-height: 3.5vw;
+    overflow-y: hidden;
+    font-weight: 900;
+}
+
+.mid-section-left-text > p
+{
+    font-size: 1.2vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.mid-section-left-headline
+{
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    overflow-y: hidden;
+}
+
+.mid-section-left-text
+{
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    overflow-y: hidden;
+}
+
+.mid-section-left-buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+#oferta, #kontakt
+{
+    padding-left: 2rem; padding-right: 2rem;
+    padding-top: 0.5rem; padding-bottom: 0.5rem;
+    border-radius: 7px;
+    border: solid #DA4525 2px;
+    font-size: 1vw;
+    color: #DA4525;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color: transparent;
+    letter-spacing: 2px;
+}
+
+#oferta:hover, #kontakt:hover
+{
+    background-color: #DA4525;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.ch
+{
+    color: #DA4525;
+}
+
+.annoucements-title
+{
+    width: 100%;
+    height: 200px;
+    background-color: orange;
+    margin-top: 7vw;
+}
+
