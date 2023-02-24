@@ -3,6 +3,8 @@
   --color-red-active: #c32b0a;
   --color-black: #1d1d1d;
   --color-grey: #878787;
+  --table-row: #f7f7f7;
+  --table-row-odd: #e9e9e9;
 }
 
 * {
@@ -23,6 +25,10 @@ body {
 main {
   display: flex;
   justify-content: center;
+}
+
+#informacje {
+  background-color: var(--color-red-active);
 }
 
 .left-menu {
@@ -188,7 +194,6 @@ input[type="file"] {
 
 #add-inf {
   margin: 20px 10px;
-  font-size: 14px;
   font-weight: bold;
   padding: 5px 10px;
   background-color: transparent;
@@ -206,16 +211,19 @@ input[type="file"] {
   background-color: var(--color-red);
   border: 2px solid transparent;
   color: white;
+  cursor: pointer;
 }
 
-/* #add-inf img {
-  padding-right: 5px;
-  vertical-align: middle;
-} */
-
 #attachment-title {
-  font-size: 12px;
   color: var(--color-red);
+}
+
+#add-images-text {
+  color: black;
+}
+
+.add-images-btn-area {
+  padding: 0 10px;
 }
 
 .add-attachment img {
@@ -223,12 +231,9 @@ input[type="file"] {
   width: 30px;
   cursor: pointer;
   position: absolute;
-  top: 58%;
+  top: 60%;
   transform: translateY(-50%);
   left: 10px;
-}
-
-.add-attachment {
 }
 
 .images-input-box {
@@ -238,17 +243,6 @@ input[type="file"] {
   background-color: white;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 15%);
   border-radius: 5px;
-  padding: 20px 10px;
-}
-
-.informations-table-area {
-  padding: 5px 20px 10px 20px;
-}
-
-.informations-table {
-  width: 100%;
-  background-color: white;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 15%);
 }
 
 .box-title {
@@ -268,5 +262,79 @@ input[type="file"] {
   margin: 0 20px;
   width: 230px;
   min-width: 230px;
-  padding-right: 20px;
+}
+
+.informations-table-area {
+  padding: 5px 20px 10px 20px;
+}
+
+.informations-table {
+  background-color: white;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 15%);
+  overflow-y: auto;
+  overflow-x: auto;
+  border-radius: 5px;
+  max-height: 600px;
+}
+
+.table-output {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  text-align: center;
+}
+.table-output thead tr {
+  background-color: var(--color-red);
+  color: white;
+}
+
+#table-inf-titles {
+  text-align: left;
+  width: 800px;
+  min-width: 400px;
+}
+
+#tresc {
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+#data span {
+  padding-left: 10px;
+}
+
+#data img {
+  vertical-align: middle;
+  width: 20px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+}
+
+#usun img {
+  vertical-align: middle;
+  width: 20px;
+  padding-right: 5px;
+  padding-bottom: 4px;
+}
+
+#usun button {
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.table-output th,
+.table-output td {
+  padding: 10px 10px;
+}
+
+.table-output tbody tr {
+  border-bottom: 1px solid var(--color-red);
+}
+
+.table-output tbody tr:last-of-type {
+  border-bottom: 2px solid var(--color-red-active);
 }
