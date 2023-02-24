@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pub/assets/css/admin-css.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <main>
+      <div class="left-menu">
+        <div class="button-area">
+          <button id="sign-out-button">
+            <img src="../pub/assets/image/power-rounded.svg" />Wyloguj się
+          </button>
+        </div>
+        <div class="user-icon"></div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="../pub/assets/image/login-rounded.svg" />Dane
+                logowania
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../pub/assets/image/info-menu-icon.svg" />Informacje
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="../pub/assets/image/file-text-edit-outline.svg"
+                />Uchwały
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../pub/assets/image/team-line.svg" />Zarząd</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../pub/assets/image/paper-line.svg" />Statut</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../pub/assets/image/address-book.svg" />RODO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="up-navbar">
+          <h1>
+            <a href="#"
+              ><img
+                src="../pub/assets/image/arrow-back-circle-outline.svg" /></a
+            >Informacje
+          </h1>
+        </div>
+        <div class="box-title">
+          <div class="inf-title"><p>Dodaj informacje</p></div>
+          <div class="img-title"><p>Dodaj zdjęcia do informacji</p></div>
+        </div>
+        <div class="information-input-box">
+          <div class="informations">
+            <form class="form" autocomplete="off" method="post">
+              <div class="tytul">
+                <input
+                  placeholder=" "
+                  class="inf-form-input"
+                  id="inf-title-input"
+                  type="text"
+                />
+                <label for="inf-title-input" class="inf-form-label"
+                  >Tytuł informacji</label
+                >
+              </div>
+              <div class="tytul">
+                <textarea
+                  placeholder=" "
+                  id="inf-text-input"
+                  class="inf-form-input"
+                  type="text"
+                ></textarea>
+                <label for="inf-text-input" class="inf-form-label"
+                  >Treść informacji</label
+                >
+              </div>
+            </form>
+            <div class="attachment">
+              <p id="attachment-title">Dodaj załącznik</p>
+              <form action="#">
+                <input type="file" id="input-attachment" />
+                <label class="add-attachment" for="input-attachment"
+                  ><img src="../pub/assets/image/pdf-icon-import.svg" alt=""
+                /></label>
+              </form>
+            </div>
+            <button id="add-inf">Dodaj ogłoszenie</button>
+          </div>
+          <div class="images-input-box"><p>Zdjęcia</p></div>
+        </div>
+        <div class="box-title">
+          <div class="inf-title"><p>Dodaj informacje</p></div>
+        </div>
+        <div class="informations-table-area">
+          <div class="informations-table">Previous informations table</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
