@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    --color-red: #DA4525; 
 }
 
 html
@@ -17,7 +18,7 @@ body
 
 .all
 {
-    background-image: url("../image/zsw-banner.svg");
+    background-image: url("../image/zsw-banner-svg.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 107% 107%;
@@ -238,9 +239,132 @@ body
 
 .annoucements-title
 {
-    width: 100%;
-    height: 200px;
-    background-color: orange;
-    margin-top: 7vw;
+    display: flex;
+    justify-content: center;
+    background-color: #DA4525;
+    width: 100vw;
+    margin-top: 2vw;
+    gap: 1vw;
 }
 
+.announcement
+{
+    width: 15vw;
+    height: auto;
+    padding: 50px 0 50px 0;
+}
+
+#announcement-image
+{
+    width: 15vw;
+    height: 9vw;
+}
+
+#a_date
+{
+    font-size: 0.7vw;
+    font-weight: bold;
+}
+
+#a_text
+{
+    font-size: 1vw;
+    color: white;
+}
+
+.spacer
+{
+    margin-top: 2vw;
+}
+
+#oferta,
+#kontakt {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 7px;
+  border: solid var(--color-red) 2px;
+  font-size: 17px;
+  color: red;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background-color: transparent;
+  letter-spacing: 2px;
+}
+
+#oferta:hover,
+#kontakt:hover {
+  background-color: var(--color-red);
+  color: white;
+  transition-duration: 0.3s;
+}
+
+.spacer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 6rem 0;
+}
+
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 35%;
+}
+
+.information > p {
+  padding-top: 1.5rem;
+}
+
+.information > h2 {
+  font-size: 26px;
+  color: var(--color-red);
+  font-weight: 200;
+  width: 100%;
+  border-bottom: solid 3px var(--color-red);
+}
+
+.contact-info {
+  line-height: 150%;
+  padding: 1.5rem 0;
+}
+
+.contact-info > p {
+  font-weight: bold;
+}
+
+.contact-info > p > span {
+  font-weight: normal;
+}
+
+#zsw-img 
+{
+    padding: 1.5rem 0;
+    object-fit: cover;
+    overflow-y: hidden;
+    width: 100%;
+}
+  
+#contact-contact-btn 
+{
+    margin: 1.5rem 0;
+    padding: 0.5rem 2rem;
+    border-radius: 7px;
+    border: solid var(--color-red) 2px;
+    font-size: 17px;
+    color: var(--color-red);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    background-color: transparent;
+    letter-spacing: 2px;
+}
+  
+#contact-contact-btn:hover 
+{
+    background-color: var(--color-red);
+    color: white;
+    transition-duration: 0.3s;
+}
