@@ -19,35 +19,35 @@
         <div class="menu">
           <ul>
             <li>
-              <a href="#">
+              <a href="#" id="dane-logowania">
                 <img src="../pub/assets/image/login-rounded.svg" />Dane
                 logowania
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" id="informacje">
                 <img src="../pub/assets/image/info-menu-icon.svg" />Informacje
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" id="uchwaly">
                 <img
                   src="../pub/assets/image/file-text-edit-outline.svg"
                 />Uchwały
               </a>
             </li>
             <li>
-              <a href="#"
+              <a href="#" id="zarzad"
                 ><img src="../pub/assets/image/team-line.svg" />Zarząd</a
               >
             </li>
             <li>
-              <a href="#"
+              <a href="#" id="statut"
                 ><img src="../pub/assets/image/paper-line.svg" />Statut</a
               >
             </li>
             <li>
-              <a href="#"
+              <a href="#" id="rodo"
                 ><img src="../pub/assets/image/address-book.svg" />RODO</a
               >
             </li>
@@ -104,13 +104,148 @@
             </div>
             <button id="add-inf">Dodaj ogłoszenie</button>
           </div>
-          <div class="images-input-box"><p>Zdjęcia</p></div>
+          <div class="images-input-box">
+            <div class="attachment">
+              <p id="add-images-text">Wybierz zdjęcia</p>
+              <form action="#">
+                <input type="file" id="input-attachment" />
+                <label class="add-attachment" for="input-attachment"
+                  ><img src="../pub/assets/image/pdf-icon-import.svg" alt=""
+                /></label>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="box-title">
           <div class="inf-title"><p>Dodaj informacje</p></div>
         </div>
         <div class="informations-table-area">
-          <div class="informations-table">Previous informations table</div>
+          <div class="informations-table">
+            <table class="table-output">
+              <thead>
+                <tr>
+                  <th>Tytuł informacji</th>
+                  <th>Treść informacji</th>
+                  <th>Data dodania</th>
+                  <th>Narzędzia</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="table-inf-titles">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque saepe aperiam cumque doloribus id accusamus ex
+                    sapiente voluptatem, alias a quaerat eum sunt in, nemo
+                    facilis exercitationem? Quis cumque repellendus, sunt aut
+                    voluptatem enim cum impedit porro saepe vero labore.
+                  </td>
+                  <td><a href="#" id="tresc">Zobacz treść</a></td>
+                  <td id="data">
+                    <img src="../pub/assets/image/clock-outline.svg" />Sobota,
+                    21.01.2023r.<span>19:04</span>
+                  </td>
+                  <td id="usun">
+                    <button>
+                      <img
+                        src="../pub/assets/image/delete-outline-rounded.svg"
+                      />Usuń informację
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="table-inf-titles">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati quisquam quo corporis.
+                  </td>
+                  <td><a href="#" id="tresc">Zobacz treść</a></td>
+                  <td id="data">
+                    <img src="../pub/assets/image/clock-outline.svg" />Sobota,
+                    21.01.2023r.<span>19:04</span>
+                  </td>
+                  <td id="usun">
+                    <button>
+                      <img
+                        src="../pub/assets/image/delete-outline-rounded.svg"
+                      />Usuń informację
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="table-inf-titles">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati quisquam quo corporis.
+                  </td>
+                  <td><a href="#" id="tresc">Zobacz treść</a></td>
+                  <td id="data">
+                    <img src="../pub/assets/image/clock-outline.svg" />Sobota,
+                    21.01.2023r.<span>19:04</span>
+                  </td>
+                  <td id="usun">
+                    <button>
+                      <img
+                        src="../pub/assets/image/delete-outline-rounded.svg"
+                      />Usuń informację
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="table-inf-titles">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    quam atque aperiam, labore nam suscipit.
+                  </td>
+                  <td><a href="#" id="tresc">Zobacz treść</a></td>
+                  <td id="data">
+                    <img src="../pub/assets/image/clock-outline.svg" />Sobota,
+                    21.01.2023r.<span>19:04</span>
+                  </td>
+                  <td id="usun">
+                    <button>
+                      <img
+                        src="../pub/assets/image/delete-outline-rounded.svg"
+                      />Usuń informację
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="table-inf-titles">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati quisquam quo corporis.
+                  </td>
+                  <td><a href="#" id="tresc">Zobacz treść</a></td>
+                  <td id="data">
+                    <img src="../pub/assets/image/clock-outline.svg" />Sobota,
+                    21.01.2023r.<span>19:04</span>
+                  </td>
+                  <td id="usun">
+                    <button>
+                      <img
+                        src="../pub/assets/image/delete-outline-rounded.svg"
+                      />Usuń informację
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="table-inf-titles">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatem facilis provident corrupti pariatur expedita quas
+                    quod autem earum eveniet reiciendis?
+                  </td>
+                  <td><a href="#" id="tresc">Zobacz treść</a></td>
+                  <td id="data">
+                    <img src="../pub/assets/image/clock-outline.svg" />Sobota,
+                    21.01.2023r.<span>19:04</span>
+                  </td>
+                  <td id="usun">
+                    <button>
+                      <img
+                        src="../pub/assets/image/delete-outline-rounded.svg"
+                      />Usuń informację
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </main>
