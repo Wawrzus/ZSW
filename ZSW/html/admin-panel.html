@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pub/assets/css/admin-css.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <main>
+      <div class="left-menu">
+        <div class="button-area">
+          <button id="sign-out-button">
+            <img src="../pub/assets/image/power-rounded.svg" />Wyloguj się
+          </button>
+        </div>
+        <div class="user-icon"></div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="admin_dane_logowania.html" id="dane-logowania">
+                <img src="../pub/assets/image/login-rounded.svg" />Dane
+                logowania
+              </a>
+            </li>
+            <li>
+              <a href="admin-panel.html" id="informacje">
+                <img src="../pub/assets/image/info-menu-icon.svg" />Informacje
+              </a>
+            </li>
+            <li>
+              <a href="#" id="uchwaly">
+                <img
+                  src="../pub/assets/image/file-text-edit-outline.svg"
+                />Uchwały
+              </a>
+            </li>
+            <li>
+              <a href="#" id="zarzad"
+                ><img src="../pub/assets/image/team-line.svg" />Zarząd</a
+              >
+            </li>
+            <li>
+              <a href="admin_statut.html" id="statut"
+                ><img src="../pub/assets/image/paper-line.svg" />Statut</a
+              >
+            </li>
+            <li>
+              <a href="admin_rodo.html" id="rodo"
+                ><img src="../pub/assets/image/address-book.svg" />RODO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="up-navbar">
+          <h1>
+            <a onclick="history.back()"
+              ><img
+                src="../pub/assets/image/arrow-back-circle-outline.svg" /></a
+            >Informacje
+          </h1>
+        </div>
+        <div class="box-title">
+          <div class="inf-title"><p>Dodaj informacje</p></div>
+          <div class="img-title"><p>Dodaj zdjęcia do informacji</p></div>
+        </div>
+        <div class="information-input-box">
+          <div class="informations">
+            <form class="form" autocomplete="off" method="post">
+              <div class="tytul">
+                <input
+                  placeholder=" "
+                  class="inf-form-input"
+                  id="inf-title-input"
+                  type="text"
+                />
+                <label for="inf-title-input" class="inf-form-label"
+                  >Tytuł informacji</label
+                >
+              </div>
+              <div class="tytul">
+                <textarea
+                  placeholder=" "
+                  id="inf-text-input"
+                  class="inf-form-input"
+                  type="text"
+                ></textarea>
+                <label for="inf-text-input" class="inf-form-label"
+                  >Treść informacji</label
+                >
+              </div>
+            </form>
+            <div class="attachment">
+              <p id="attachment-title">Dodaj załącznik</p>
+              <form action="#">
+                <input type="file" id="input-attachment" />
+                <label class="add-attachment" for="input-attachment"
+                  ><img src="../pub/assets/image/pdf-icon-import.svg" alt=""
+                /></label>
+              </form>
+            </div>
+            <button id="add-inf">Dodaj ogłoszenie</button>
+          </div>
+          <div class="images-input-box">
+            <div class="attachment">
+              <p id="add-images-text">Wybierz zdjęcia</p>
+              <form action="#">
+                <input type="file" id="input-attachment" />
+                <label class="add-attachment" for="input-attachment"
+                  ><img src="../pub/assets/image/pdf-icon-import.svg" alt=""
+                /></label>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="box-title">
+          <div class="inf-title"><p>Dodaj informacje</p></div>
+        </div>
+        <div class="informations-table-area">
+          <div class="informations-table">
+            <table class="table-output">
+              <thead>
+                <tr>
+                  <th>Tytuł informacji</th>
+                  <th>Treść informacji</th>
+                  <th>Data dodania</th>
+                  <th>Narzędzia</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="table-inf-titles">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque saepe aperiam cumque doloribus id accusamus ex
+                    sapiente voluptatem, alias a quaerat eum sunt in, nemo
+                    facilis exercitationem? Quis cumque repellendus, sunt aut
+                    voluptatem enim cum impedit porro saepe vero labore.
+                  </td>
+                  <td id="table-tresc">
+                    <a href="#" id="tresc">Zobacz treść</a>
+                  </td>
+                  <td id="data">
+                    <img
+                      src="../pub/assets/image/clock-outline.svg"
+                    />Poniedziałek, 21.01.2023r.<span>19:04</span>
+                  </td>
+                  <td id="usun">
+                    <button>
+                      <img
+                        src="../pub/assets/image/delete-outline-rounded.svg"
+                      />Usuń informację
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="table-inf-titles">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati quisquam quo corporis.
+                  </td>
+                  <td><a href="#" id="tresc">Zobacz treść</a></td>
+                  <td id="data">
+                    <img
+                      src="../pub/assets/image/clock-outline.svg"
+                    />Niedziela, 21.01.2023r.<span>19:04</span>
+                  </td>
+                  <td id="usun">
+                    <button>
+                      <img
+                        src="../pub/assets/image/delete-outline-rounded.svg"
+                      />Usuń informację
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="table-inf-titles">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati quisquam quo corporis.
+                  </td>
+                  <td><a href="#" id="tresc">Zobacz treść</a></td>
+                  <td id="data">
+                    <img src="../pub/assets/image/clock-outline.svg" />Wtorek,
+                    21.01.2023r.<span>19:04</span>
+                  </td>
+                  <td id="usun">
+                    <button>
+                      <img
+                        src="../pub/assets/image/delete-outline-rounded.svg"
+                      />Usuń informację
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="table-inf-titles">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    quam atque aperiam, labore nam suscipit.
+                  </td>
+                  <td><a href="#" id="tresc">Zobacz treść</a></td>
+                  <td id="data">
+                    <img src="../pub/assets/image/clock-outline.svg" />Środa,
+                    21.01.2023r.<span>19:04</span>
+                  </td>
+                  <td id="usun">
+                    <button>
+                      <img
+                        src="../pub/assets/image/delete-outline-rounded.svg"
+                      />Usuń informację
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="table-inf-titles">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati quisquam quo corporis.
+                  </td>
+                  <td><a href="#" id="tresc">Zobacz treść</a></td>
+                  <td id="data">
+                    <img src="../pub/assets/image/clock-outline.svg" />Czwartek,
+                    21.01.2023r.<span>19:04</span>
+                  </td>
+                  <td id="usun">
+                    <button>
+                      <img
+                        src="../pub/assets/image/delete-outline-rounded.svg"
+                      />Usuń informację
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="table-inf-titles">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatem facilis provident corrupti pariatur expedita quas
+                    quod autem earum eveniet reiciendis?
+                  </td>
+                  <td><a href="#" id="tresc">Zobacz treść</a></td>
+                  <td id="data">
+                    <img src="../pub/assets/image/clock-outline.svg" />Piątek,
+                    21.01.2023r.<span>19:04</span>
+                  </td>
+                  <td id="usun">
+                    <button>
+                      <img
+                        src="../pub/assets/image/delete-outline-rounded.svg"
+                      />Usuń informację
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

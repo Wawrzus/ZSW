@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pub/assets/css/admin_rodo.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <main>
+      <div class="left-menu">
+        <div class="button-area">
+          <button id="sign-out-button">
+            <img src="../pub/assets/image/power-rounded.svg" />Wyloguj się
+          </button>
+        </div>
+        <div class="user-icon"></div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="admin_dane_logowania.html" id="dane-logowania">
+                <img src="../pub/assets/image/login-rounded.svg" />Dane
+                logowania
+              </a>
+            </li>
+            <li>
+              <a href="admin-panel.html" id="informacje">
+                <img src="../pub/assets/image/info-menu-icon.svg" />Informacje
+              </a>
+            </li>
+            <li>
+              <a href="#" id="uchwaly">
+                <img
+                  src="../pub/assets/image/file-text-edit-outline.svg"
+                />Uchwały
+              </a>
+            </li>
+            <li>
+              <a href="#" id="zarzad"
+                ><img src="../pub/assets/image/team-line.svg" />Zarząd</a
+              >
+            </li>
+            <li>
+              <a href="admin_statut.html" id="statut"
+                ><img src="../pub/assets/image/paper-line.svg" />Statut</a
+              >
+            </li>
+            <li>
+              <a href="admin_rodo.html" id="rodo"
+                ><img src="../pub/assets/image/address-book.svg" />RODO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="up-navbar">
+          <h1>
+            <a onclick="history.back()"
+              ><img
+                src="../pub/assets/image/arrow-back-circle-outline.svg" /></a
+            >RODO
+          </h1>
+        </div>
+        <div class="content-box">
+          <h2>Edytuj rodo</h2>
+          <div class="spacer"></div>
+          <div class="input-box">
+            <form action="">
+              <textarea name="#" id="rodo-input" cols="30" rows="10"></textarea>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../pub/assets/js/script.js"></script>
+  </body>
+</html>
