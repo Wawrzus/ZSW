@@ -25,7 +25,7 @@ main {
   justify-content: center;
 }
 
-#dane-logowania {
+#uchwaly {
   background-color: var(--color-red-active);
 }
 
@@ -122,153 +122,121 @@ main {
   vertical-align: middle;
 }
 
+.uchwaly-box h2 {
+  cursor: default;
+  font-size: 22px;
+  text-align: left;
+}
+
 .spacer {
-  margin: 0 auto 10px auto;
-  width: 60%;
+  display: none;
+  margin: 10px auto;
+  width: 50%;
   height: 3px;
   background-color: var(--color-red);
   border-radius: 50%;
 }
 
-.box-title h1 {
-  padding: 10px 20px;
-  font-size: 22px;
-  text-align: center;
-}
-
-.new-data {
-  margin-top: 40px;
-}
-
-.informations h2 {
-  font-size: 18px;
-  text-align: center;
-}
-
-.information-input-box {
-  display: flex;
-  justify-content: center;
-  padding: 2px 0 25px 0;
-  width: 100%;
-}
-
-.informations {
+.uchwaly-box {
   width: 50%;
-  min-width: 450px;
+  min-width: 350px;
+  margin: 20px auto;
+  padding: 5px 20px;
   background-color: white;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 15%);
   border-radius: 5px;
   position: relative;
-  padding-bottom: 10px;
 }
 
-.insert-data {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.data-form-input {
-  padding: 0 10px;
-  width: 80%;
-  height: 30px;
-  border: transparent;
-  border-bottom: 2px solid black;
-  outline: none;
-  font-size: 16px;
-  margin-top: 20px;
-}
-
-.inf-form-label::before {
-  content: "*";
+.show-more-text {
   position: absolute;
-  left: 0;
-  top: 0;
-  color: red;
-}
-
-.inf-form-label {
-  cursor: text;
-  padding-left: 10px;
+  top: 13px;
   font-size: 14px;
-  color: var(--color-red);
-  color: black;
-  position: absolute;
-  top: 45%;
-  left: 10%;
+  right: 42px;
 }
 
-.insert-data span {
+.show-more-button {
   position: absolute;
-  top: 45%;
-  right: 10%;
-}
-
-.insert-data span img {
-  width: 16px;
-}
-
-#show-password {
-  position: absolute;
-  padding-top: 2px;
-  width: 18px;
-  top: 45%;
-  right: calc(10% + 25px);
-}
-
-#show-new-password {
-  position: absolute;
-  padding-top: 1px;
+  top: 14px;
+  right: 20px;
   width: 20px;
-  top: 45%;
-  right: calc(10% + 25px);
+}
+.show-more {
+  border-radius: 10px;
+}
+.show-more:hover {
+  cursor: pointer;
 }
 
-.insert-data input:focus + label,
-.insert-data input:not(:placeholder-shown) + label {
+.tytul {
+  padding: 0 10px;
+  position: relative;
+}
+
+.tytul input:focus + label,
+.tytul input:not(:placeholder-shown) + label {
   opacity: 0;
 }
 
-.legend {
-  margin: 10px 9%;
-  vertical-align: middle;
+.tytul textarea:focus + label,
+.tytul textarea:not(:placeholder-shown) + label {
+  opacity: 0;
 }
 
-.legend p {
-  float: right;
-  font-size: 18px;
-  color: red;
-}
-
-.legend p span {
-  padding-left: 5px;
-  font-size: 13px;
-  float: right;
-  color: black;
-}
-
-.submit-button {
-  display: flex;
-  justify-content: center;
+.inf-form-input {
+  font-size: 16px;
   width: 100%;
-}
-
-#change-button {
-  font-size: 18px;
-  font-weight: bold;
+  border: 1px solid black;
   outline: none;
-  border: 2px solid var(--color-red);
-  border-radius: 50px;
-  height: 40px;
-  padding-inline: 35%;
-  transition: 0.2s;
-  background-color: var(--color-red);
-  color: white;
+  resize: none;
 }
 
-#change-button:hover {
-  cursor: pointer;
+.inf-form-label {
+  font-size: 14px;
   color: var(--color-red);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -20%);
+  left: 50%;
+}
+
+.add-content {
+  display: none;
+}
+
+#inf-title-input {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 18px;
+  height: 40px;
+  padding-inline: 10px;
+  margin: 20px 0 10px 0;
+  font-weight: bold;
+}
+
+#inf-text-input {
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 250px;
+}
+
+.add-uchwale {
+  display: none;
+  font-size: 16px;
+  margin: 10px auto;
+  font-weight: bold;
+  padding: 5px 10px;
   background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid var(--color-red);
+  outline: none;
+  color: var(--color-red);
+  transition: 0.2s;
+}
+
+.add-uchwale:hover {
+  background-color: var(--color-red);
+  border: 2px solid transparent;
+  color: white;
+  cursor: pointer;
 }
