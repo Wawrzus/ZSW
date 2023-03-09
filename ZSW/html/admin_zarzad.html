@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pub/assets/css/admin_zarzad.css" />
+    <title>Administrator - Związek spółek wodnych w Cieszynie</title>
+  </head>
+  <body>
+    <main>
+      <div class="left-menu">
+        <div class="button-area">
+          <button id="sign-out-button">
+            <img src="../pub/assets/image/power-rounded.svg" />Wyloguj się
+          </button>
+        </div>
+        <div class="user-icon"></div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="admin_dane_logowania.html" id="dane-logowania">
+                <img src="../pub/assets/image/login-rounded.svg" />Dane
+                logowania
+              </a>
+            </li>
+            <li>
+              <a href="admin-panel.html" id="informacje">
+                <img src="../pub/assets/image/info-menu-icon.svg" />Informacje
+              </a>
+            </li>
+            <li>
+              <a href="admin_uchwaly.html" id="uchwaly">
+                <img
+                  src="../pub/assets/image/file-text-edit-outline.svg"
+                />Uchwały
+              </a>
+            </li>
+            <li>
+              <a href="admin_zarzad.html" id="zarzad"
+                ><img src="../pub/assets/image/team-line.svg" />Zarząd</a
+              >
+            </li>
+            <li>
+              <a href="admin_statut.html" id="statut"
+                ><img src="../pub/assets/image/paper-line.svg" />Statut</a
+              >
+            </li>
+            <li>
+              <a href="admin_rodo.html" id="rodo"
+                ><img src="../pub/assets/image/address-book.svg" />RODO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="up-navbar">
+          <h1>
+            <a onclick="history.back()"
+              ><img
+                src="../pub/assets/image/arrow-back-circle-outline.svg" /></a
+            >Zarząd
+          </h1>
+        </div>
+        <div class="box-title">
+          <div class="inf-title"><p>Zaktualizuj skład ZSW w Cieszynie</p></div>
+          <div class="img-title"><p>Skład komisji rewizyjnej</p></div>
+        </div>
+        <div class="information-input-box">
+          <div class="informations">
+            <h2>Aktualny skład zarządu</h2>
+            <div class="spacer" id="spacer"></div>
+            <form class="form" id="first-form">
+              <label for="przewodniczacy" class="form-label"
+                >Przewodniczący:</label
+              >
+              <input type="text" class="form-input" id="przewodniczacy" />
+              <label for="zastepa-przewodniczacego" class="form-label"
+                >Zastępca przewodniczącego:</label
+              >
+              <input
+                type="text"
+                class="form-input"
+                id="zastepa-przewodniczacego"
+              />
+              <label for="zastepa-przewodniczacego" class="form-label"
+                >Reszta zarządu:</label
+              >
+              <textarea class="form-textarea"></textarea>
+              <div class="btn-area">
+                <button id="update-btn">Zaktualizuj</button>
+              </div>
+            </form>
+          </div>
+          <div class="images-input-box">
+            <h2>Aktualna komisja rewizyjna</h2>
+            <div class="spacer" id="spacer"></div>
+            <form class="form" id="first-form">
+              <label for="przewodniczacy" class="form-label"
+                >Przewodniczący:</label
+              >
+              <input type="text" class="form-input" id="przewodniczacy" />
+              <label for="zastepa-przewodniczacego" class="form-label"
+                >Zastępca przewodniczącego:</label
+              >
+              <input
+                type="text"
+                class="form-input"
+                id="zastepa-przewodniczacego"
+              />
+              <label for="zastepa-przewodniczacego" class="form-label"
+                >Reszta składu komisji:</label
+              >
+              <textarea class="form-textarea"></textarea>
+              <div class="btn-area">
+                <button id="update-btn">Zaktualizuj</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="box-title">
+          <div class="inf-title" id="second-title-box">
+            <p>Pozostałe zarządy spółek</p>
+          </div>
+        </div>
+        <div class="spacer" id="second-spacer"></div>
+        <div ondblclick="Expand()" class="zarzad-box" id="brenna">
+          <h3 id="zarzad-title">Zarząd Brenna</h3>
+          <div class="rest-spacer" id="rest-spacer"></div>
+          <span class="show-more" id="show-more"
+            ><p class="show-more-text" id="show-more-text">Rozwiń</p>
+            <img
+              class="show-more-button"
+              id="show-more-button"
+              src="../pub/assets/image/expand-more-rounded.svg"
+              alt="Show-more"
+          /></span>
+          <form class="form" id="form">
+            <label for="przewodniczacy" class="form-label"
+              >Przewodniczący:</label
+            >
+            <input type="text" class="form-input" id="przewodniczacy" />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Zastępca przewodniczącego:</label
+            >
+            <input
+              type="text"
+              class="form-input"
+              id="zastepa-przewodniczacego"
+            />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Reszta składu zarządu:</label
+            >
+            <textarea class="form-textarea"></textarea>
+            <div class="btn-area">
+              <button id="update-btn">Zaktualizuj</button>
+            </div>
+          </form>
+        </div>
+        <div ondblclick="Expand2()" class="zarzad-box" id="chybie">
+          <h3 id="zarzad-title-2">Zarząd Chybie</h3>
+          <div class="rest-spacer" id="rest-spacer-2"></div>
+          <span class="show-more" id="show-more-2"
+            ><p class="show-more-text" id="show-more-text">Rozwiń</p>
+            <img
+              class="show-more-button"
+              id="show-more-button"
+              src="../pub/assets/image/expand-more-rounded.svg"
+              alt="Show-more"
+          /></span>
+          <form class="form" id="form-2">
+            <label for="przewodniczacy" class="form-label"
+              >Przewodniczący:</label
+            >
+            <input type="text" class="form-input" id="przewodniczacy" />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Zastępca przewodniczącego:</label
+            >
+            <input
+              type="text"
+              class="form-input"
+              id="zastepa-przewodniczacego"
+            />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Reszta składu zarządu:</label
+            >
+            <textarea class="form-textarea"></textarea>
+            <div class="btn-area">
+              <button id="update-btn">Zaktualizuj</button>
+            </div>
+          </form>
+        </div>
+        <div ondblclick="Expand3()" class="zarzad-box" id="debowiec">
+          <h3 id="zarzad-title-3">Zarząd Dębowiec</h3>
+          <div class="rest-spacer" id="rest-spacer-3"></div>
+          <span class="show-more" id="show-more-3"
+            ><p class="show-more-text" id="show-more-text">Rozwiń</p>
+            <img
+              class="show-more-button"
+              id="show-more-button"
+              src="../pub/assets/image/expand-more-rounded.svg"
+              alt="Show-more"
+          /></span>
+          <form class="form" id="form-3">
+            <label for="przewodniczacy" class="form-label"
+              >Przewodniczący:</label
+            >
+            <input type="text" class="form-input" id="przewodniczacy" />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Zastępca przewodniczącego:</label
+            >
+            <input
+              type="text"
+              class="form-input"
+              id="zastepa-przewodniczacego"
+            />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Reszta składu zarządu:</label
+            >
+            <textarea class="form-textarea"></textarea>
+            <div class="btn-area">
+              <button id="update-btn">Zaktualizuj</button>
+            </div>
+          </form>
+        </div>
+        <div ondblclick="Expand4()" class="zarzad-box" id="goleszow">
+          <h3 id="zarzad-title-4">Zarząd Goleszów</h3>
+          <div class="rest-spacer" id="rest-spacer-4"></div>
+          <span class="show-more" id="show-more-4"
+            ><p class="show-more-text" id="show-more-text">Rozwiń</p>
+            <img
+              class="show-more-button"
+              id="show-more-button"
+              src="../pub/assets/image/expand-more-rounded.svg"
+              alt="Show-more"
+          /></span>
+          <form class="form" id="form-4">
+            <label for="przewodniczacy" class="form-label"
+              >Przewodniczący:</label
+            >
+            <input type="text" class="form-input" id="przewodniczacy" />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Zastępca przewodniczącego:</label
+            >
+            <input
+              type="text"
+              class="form-input"
+              id="zastepa-przewodniczacego"
+            />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Reszta składu zarządu:</label
+            >
+            <textarea class="form-textarea"></textarea>
+            <div class="btn-area">
+              <button id="update-btn">Zaktualizuj</button>
+            </div>
+          </form>
+        </div>
+        <div ondblclick="Expand5()" class="zarzad-box" id="hazlach">
+          <h3 id="zarzad-title-5">Zarząd Hażlach</h3>
+          <div class="rest-spacer" id="rest-spacer-5"></div>
+          <span class="show-more" id="show-more-5"
+            ><p class="show-more-text" id="show-more-text">Rozwiń</p>
+            <img
+              class="show-more-button"
+              id="show-more-button"
+              src="../pub/assets/image/expand-more-rounded.svg"
+              alt="Show-more"
+          /></span>
+          <form class="form" id="form-5">
+            <label for="przewodniczacy" class="form-label"
+              >Przewodniczący:</label
+            >
+            <input type="text" class="form-input" id="przewodniczacy" />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Zastępca przewodniczącego:</label
+            >
+            <input
+              type="text"
+              class="form-input"
+              id="zastepa-przewodniczacego"
+            />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Reszta składu zarządu:</label
+            >
+            <textarea class="form-textarea"></textarea>
+            <div class="btn-area">
+              <button id="update-btn">Zaktualizuj</button>
+            </div>
+          </form>
+        </div>
+        <div ondblclick="Expand6()" class="zarzad-box" id="strumien">
+          <h3 id="zarzad-title-6">Zarząd Strumień</h3>
+          <div class="rest-spacer" id="rest-spacer-6"></div>
+          <span class="show-more" id="show-more-6"
+            ><p class="show-more-text" id="show-more-text">Rozwiń</p>
+            <img
+              class="show-more-button"
+              id="show-more-button"
+              src="../pub/assets/image/expand-more-rounded.svg"
+              alt="Show-more"
+          /></span>
+          <form class="form" id="form-6">
+            <label for="przewodniczacy" class="form-label"
+              >Przewodniczący:</label
+            >
+            <input type="text" class="form-input" id="przewodniczacy" />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Zastępca przewodniczącego:</label
+            >
+            <input
+              type="text"
+              class="form-input"
+              id="zastepa-przewodniczacego"
+            />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Reszta składu zarządu:</label
+            >
+            <textarea class="form-textarea"></textarea>
+            <div class="btn-area">
+              <button id="update-btn">Zaktualizuj</button>
+            </div>
+          </form>
+        </div>
+        <div ondblclick="Expand7()" class="zarzad-box" id="ustron">
+          <h3 id="zarzad-title-7">Zarząd Ustroń</h3>
+          <div class="rest-spacer" id="rest-spacer-7"></div>
+          <span class="show-more" id="show-more-7"
+            ><p class="show-more-text" id="show-more-text">Rozwiń</p>
+            <img
+              class="show-more-button"
+              id="show-more-button"
+              src="../pub/assets/image/expand-more-rounded.svg"
+              alt="Show-more"
+          /></span>
+          <form class="form" id="form-7">
+            <label for="przewodniczacy" class="form-label"
+              >Przewodniczący:</label
+            >
+            <input type="text" class="form-input" id="przewodniczacy" />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Zastępca przewodniczącego:</label
+            >
+            <input
+              type="text"
+              class="form-input"
+              id="zastepa-przewodniczacego"
+            />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Reszta składu zarządu:</label
+            >
+            <textarea class="form-textarea"></textarea>
+            <div class="btn-area">
+              <button id="update-btn">Zaktualizuj</button>
+            </div>
+          </form>
+        </div>
+        <div ondblclick="Expand8()" class="zarzad-box" id="zebrzydowice">
+          <h3 id="zarzad-title-8">Zarząd Zebrzydowice</h3>
+          <div class="rest-spacer" id="rest-spacer-8"></div>
+          <span class="show-more" id="show-more-8"
+            ><p class="show-more-text" id="show-more-text">Rozwiń</p>
+            <img
+              class="show-more-button"
+              id="show-more-button"
+              src="../pub/assets/image/expand-more-rounded.svg"
+              alt="Show-more"
+          /></span>
+          <form class="form" id="form-8">
+            <label for="przewodniczacy" class="form-label"
+              >Przewodniczący:</label
+            >
+            <input type="text" class="form-input" id="przewodniczacy" />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Zastępca przewodniczącego:</label
+            >
+            <input
+              type="text"
+              class="form-input"
+              id="zastepa-przewodniczacego"
+            />
+            <label for="zastepa-przewodniczacego" class="form-label"
+              >Reszta składu zarządu:</label
+            >
+            <textarea class="form-textarea"></textarea>
+            <div class="btn-area">
+              <button id="update-btn">Zaktualizuj</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="../pub/assets/js/admin_zarzad.js"></script>
+  </body>
+</html>

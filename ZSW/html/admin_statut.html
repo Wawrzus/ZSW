@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../pub/assets/css/admin-statut.css" />
-    <title>Admin</title>
+    <title>Administrator - Związek spółek wodnych w Cieszynie</title>
   </head>
   <body>
     <main>
@@ -30,14 +30,14 @@
               </a>
             </li>
             <li>
-              <a href="#" id="uchwaly">
+              <a href="admin_uchwaly.html" id="uchwaly">
                 <img
                   src="../pub/assets/image/file-text-edit-outline.svg"
                 />Uchwały
               </a>
             </li>
             <li>
-              <a href="#" id="zarzad"
+              <a href="admin_zarzad.html" id="zarzad"
                 ><img src="../pub/assets/image/team-line.svg" />Zarząd</a
               >
             </li>
@@ -66,15 +66,16 @@
         <div class="content-box">
           <div ondblclick="Expand()" class="statut-box" id="brenna">
             <h2 id="statut-title">Statut Brenna</h2>
-            <span id="show-more"
-              ><p id="show-more-text">Rozwiń</p>
+            <span class="show-more" id="show-more"
+              ><p class="show-more-text" id="show-more-text">Rozwiń</p>
               <img
+                class="show-more-button"
                 id="show-more-button"
                 src="../pub/assets/image/expand-more-rounded.svg"
                 alt="Show-more"
             /></span>
-            <div class="spacer"></div>
-            <div class="attachment">
+            <div class="spacer" id="spacer"></div>
+            <div class="attachment" id="attachment">
               <p id="attachment-title">Dodaj załącznik statutu</p>
               <form action="#">
                 <input type="file" id="input-attachment" />
@@ -83,19 +84,20 @@
                 /></label>
               </form>
             </div>
-            <button id="add-inf">Dodaj statut</button>
+            <button class="add-inf" id="add-inf">Dodaj statut</button>
           </div>
-          <!-- <div ondblclick="Expand()" class="statut-box" id="chybie">
-            <h2 id="statut-title">Statut Chybie</h2>
-            <span id="show-more"
-              ><p id="show-more-text">Rozwiń</p>
+          <div ondblclick="Expand2()" class="statut-box" id="chybie">
+            <h2 id="statut-title-2">Statut Chybie</h2>
+            <span class="show-more" id="show-more-2"
+              ><p class="show-more-text" id="show-more-text-2">Rozwiń</p>
               <img
-                id="show-more-button"
+                class="show-more-button"
+                id="show-more-button-2"
                 src="../pub/assets/image/expand-more-rounded.svg"
                 alt="Show-more"
             /></span>
-            <div class="spacer"></div>
-            <div class="attachment">
+            <div class="spacer" id="spacer-2"></div>
+            <div class="attachment" id="attachment-2">
               <p id="attachment-title">Dodaj załącznik statutu</p>
               <form action="#">
                 <input type="file" id="input-attachment" />
@@ -104,11 +106,165 @@
                 /></label>
               </form>
             </div>
-            <button id="add-inf">Dodaj statut</button>
-          </div> -->
+            <button class="add-inf" id="add-inf-2">Dodaj statut</button>
+          </div>
+          <div ondblclick="Expand3()" class="statut-box" id="cieszyn">
+            <h2 id="statut-title-3">Statut Cieszyn</h2>
+            <span class="show-more" id="show-more-3"
+              ><p class="show-more-text" id="show-more-text-3">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button-3"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-3"></div>
+            <div class="attachment" id="attachment-3">
+              <p id="attachment-title">Dodaj załącznik statutu</p>
+              <form action="#">
+                <input type="file" id="input-attachment" />
+                <label class="add-attachment" for="input-attachment"
+                  ><img src="../pub/assets/image/pdf-icon-import.svg" alt=""
+                /></label>
+              </form>
+            </div>
+            <button class="add-inf" id="add-inf-3">Dodaj statut</button>
+          </div>
+          <div ondblclick="Expand4()" class="statut-box" id="debowiec">
+            <h2 id="statut-title-4">Statut Dębowiec</h2>
+            <span class="show-more" id="show-more-4"
+              ><p class="show-more-text" id="show-more-text-4">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button-4"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-4"></div>
+            <div class="attachment" id="attachment-4">
+              <p id="attachment-title">Dodaj załącznik statutu</p>
+              <form action="#">
+                <input type="file" id="input-attachment" />
+                <label class="add-attachment" for="input-attachment"
+                  ><img src="../pub/assets/image/pdf-icon-import.svg" alt=""
+                /></label>
+              </form>
+            </div>
+            <button class="add-inf" id="add-inf-4">Dodaj statut</button>
+          </div>
+          <div ondblclick="Expand5()" class="statut-box" id="goleszow">
+            <h2 id="statut-title-5">Statut Goleszów</h2>
+            <span class="show-more" id="show-more-5"
+              ><p class="show-more-text" id="show-more-text-5">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button-5"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-5"></div>
+            <div class="attachment" id="attachment-5">
+              <p id="attachment-title">Dodaj załącznik statutu</p>
+              <form action="#">
+                <input type="file" id="input-attachment" />
+                <label class="add-attachment" for="input-attachment"
+                  ><img src="../pub/assets/image/pdf-icon-import.svg" alt=""
+                /></label>
+              </form>
+            </div>
+            <button class="add-inf" id="add-inf-5">Dodaj statut</button>
+          </div>
+          <div ondblclick="Expand6()" class="statut-box" id="hazlach">
+            <h2 id="statut-title-6">Statut Hażlach</h2>
+            <span class="show-more" id="show-more-6"
+              ><p class="show-more-text" id="show-more-text-6">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button-6"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-6"></div>
+            <div class="attachment" id="attachment-6">
+              <p id="attachment-title">Dodaj załącznik statutu</p>
+              <form action="#">
+                <input type="file" id="input-attachment" />
+                <label class="add-attachment" for="input-attachment"
+                  ><img src="../pub/assets/image/pdf-icon-import.svg" alt=""
+                /></label>
+              </form>
+            </div>
+            <button class="add-inf" id="add-inf-6">Dodaj statut</button>
+          </div>
+          <div ondblclick="Expand7()" class="statut-box" id="strumien">
+            <h2 id="statut-title-7">Statut Strumień</h2>
+            <span class="show-more" id="show-more-7"
+              ><p class="show-more-text" id="show-more-text-7">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button-7"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-7"></div>
+            <div class="attachment" id="attachment-7">
+              <p id="attachment-title">Dodaj załącznik statutu</p>
+              <form action="#">
+                <input type="file" id="input-attachment" />
+                <label class="add-attachment" for="input-attachment"
+                  ><img src="../pub/assets/image/pdf-icon-import.svg" alt=""
+                /></label>
+              </form>
+            </div>
+            <button class="add-inf" id="add-inf-7">Dodaj statut</button>
+          </div>
+          <div ondblclick="Expand8()" class="statut-box" id="ustron">
+            <h2 id="statut-title-8">Statut Ustroń</h2>
+            <span class="show-more" id="show-more-8"
+              ><p class="show-more-text" id="show-more-text-8">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button-8"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-8"></div>
+            <div class="attachment" id="attachment-8">
+              <p id="attachment-title">Dodaj załącznik statutu</p>
+              <form action="#">
+                <input type="file" id="input-attachment" />
+                <label class="add-attachment" for="input-attachment"
+                  ><img src="../pub/assets/image/pdf-icon-import.svg" alt=""
+                /></label>
+              </form>
+            </div>
+            <button class="add-inf" id="add-inf-8">Dodaj statut</button>
+          </div>
+          <div ondblclick="Expand9()" class="statut-box" id="zebrzydowice">
+            <h2 id="statut-title-9">Statut Zebrzydowice</h2>
+            <span class="show-more" id="show-more-9"
+              ><p class="show-more-text" id="show-more-text-9">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button-9"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-9"></div>
+            <div class="attachment" id="attachment-9">
+              <p id="attachment-title">Dodaj załącznik statutu</p>
+              <form action="#">
+                <input type="file" id="input-attachment" />
+                <label class="add-attachment" for="input-attachment"
+                  ><img src="../pub/assets/image/pdf-icon-import.svg" alt=""
+                /></label>
+              </form>
+            </div>
+            <button class="add-inf" id="add-inf-9">Dodaj statut</button>
+          </div>
         </div>
       </div>
     </main>
-    <script src="../pub/assets/js/script.js"></script>
+    <script src="../pub/assets/js/statut.js"></script>
   </body>
 </html>

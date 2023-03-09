@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pub/assets/css/admin_uchwaly.css" />
+    <title>Administrator - Związek spółek wodnych w Cieszynie</title>
+  </head>
+  <body>
+    <main>
+      <div class="left-menu">
+        <div class="button-area">
+          <button id="sign-out-button">
+            <img src="../pub/assets/image/power-rounded.svg" />Wyloguj się
+          </button>
+        </div>
+        <div class="user-icon"></div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="admin_dane_logowania.html" id="dane-logowania">
+                <img src="../pub/assets/image/login-rounded.svg" />Dane
+                logowania
+              </a>
+            </li>
+            <li>
+              <a href="admin-panel.html" id="informacje">
+                <img src="../pub/assets/image/info-menu-icon.svg" />Informacje
+              </a>
+            </li>
+            <li>
+              <a href="admin_uchwaly.html" id="uchwaly">
+                <img
+                  src="../pub/assets/image/file-text-edit-outline.svg"
+                />Uchwały
+              </a>
+            </li>
+            <li>
+              <a href="admin_zarzad.html" id="zarzad"
+                ><img src="../pub/assets/image/team-line.svg" />Zarząd</a
+              >
+            </li>
+            <li>
+              <a href="admin_statut.html" id="statut"
+                ><img src="../pub/assets/image/paper-line.svg" />Statut</a
+              >
+            </li>
+            <li>
+              <a href="admin_rodo.html" id="rodo"
+                ><img src="../pub/assets/image/address-book.svg" />RODO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="up-navbar">
+          <h1>
+            <a onclick="history.back()"
+              ><img
+                src="../pub/assets/image/arrow-back-circle-outline.svg" /></a
+            >Uchwały
+          </h1>
+        </div>
+        <div class="content-box">
+          <div ondblclick="Expand()" class="uchwaly-box" id="brenna">
+            <h2 id="uchwaly-title">Uchwała Brenna</h2>
+            <span class="show-more" id="show-more"
+              ><p class="show-more-text" id="show-more-text">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer"></div>
+            <div class="add-content" id="add-content">
+              <form class="form" autocomplete="off" method="post">
+                <div class="tytul">
+                  <input
+                    placeholder=" "
+                    class="inf-form-input"
+                    id="inf-title-input"
+                    type="text"
+                  />
+                  <label for="inf-title-input" class="inf-form-label"
+                    >Tytuł uchwały</label
+                  >
+                </div>
+                <div class="tytul">
+                  <textarea
+                    placeholder=" "
+                    id="inf-text-input"
+                    class="inf-form-input"
+                    type="text"
+                  ></textarea>
+                  <label for="inf-text-input" class="inf-form-label"
+                    >Treść uchwały</label
+                  >
+                </div>
+              </form>
+              <button class="add-uchwale" id="add-uchwale">
+                Dodaj uchwałę
+              </button>
+            </div>
+          </div>
+          <div ondblclick="Expand2()" class="uchwaly-box" id="chybie">
+            <h2 id="uchwaly-title-2">Uchwała Chybie</h2>
+            <span class="show-more" id="show-more-2"
+              ><p class="show-more-text" id="show-more-text-2">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-2"></div>
+            <div class="add-content" id="add-content-2">
+              <form class="form" autocomplete="off" method="post">
+                <div class="tytul">
+                  <input
+                    placeholder=" "
+                    class="inf-form-input"
+                    id="inf-title-input"
+                    type="text"
+                  />
+                  <label for="inf-title-input" class="inf-form-label"
+                    >Tytuł uchwały</label
+                  >
+                </div>
+                <div class="tytul">
+                  <textarea
+                    placeholder=" "
+                    id="inf-text-input"
+                    class="inf-form-input"
+                    type="text"
+                  ></textarea>
+                  <label for="inf-text-input" class="inf-form-label"
+                    >Treść uchwały</label
+                  >
+                </div>
+              </form>
+              <button class="add-uchwale" id="add-uchwale-2">
+                Dodaj uchwałę
+              </button>
+            </div>
+          </div>
+          <div ondblclick="Expand3()" class="uchwaly-box" id="cieszyn">
+            <h2 id="uchwaly-title-3">Uchwała</h2>
+            <span class="show-more" id="show-more-3"
+              ><p class="show-more-text" id="show-more-text-3">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-3"></div>
+            <div class="add-content" id="add-content-3">
+              <form class="form" autocomplete="off" method="post">
+                <div class="tytul">
+                  <input
+                    placeholder=" "
+                    class="inf-form-input"
+                    id="inf-title-input"
+                    type="text"
+                  />
+                  <label for="inf-title-input" class="inf-form-label"
+                    >Tytuł uchwały</label
+                  >
+                </div>
+                <div class="tytul">
+                  <textarea
+                    placeholder=" "
+                    id="inf-text-input"
+                    class="inf-form-input"
+                    type="text"
+                  ></textarea>
+                  <label for="inf-text-input" class="inf-form-label"
+                    >Treść uchwały</label
+                  >
+                </div>
+              </form>
+              <button class="add-uchwale" id="add-uchwale-3">
+                Dodaj uchwałę
+              </button>
+            </div>
+          </div>
+          <div ondblclick="Expand4()" class="uchwaly-box" id="debowiec">
+            <h2 id="uchwaly-title-4">Uchwała Dębowiec</h2>
+            <span class="show-more" id="show-more-4"
+              ><p class="show-more-text" id="show-more-text-4">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-4"></div>
+            <div class="add-content" id="add-content-4">
+              <form class="form" autocomplete="off" method="post">
+                <div class="tytul">
+                  <input
+                    placeholder=" "
+                    class="inf-form-input"
+                    id="inf-title-input"
+                    type="text"
+                  />
+                  <label for="inf-title-input" class="inf-form-label"
+                    >Tytuł uchwały</label
+                  >
+                </div>
+                <div class="tytul">
+                  <textarea
+                    placeholder=" "
+                    id="inf-text-input"
+                    class="inf-form-input"
+                    type="text"
+                  ></textarea>
+                  <label for="inf-text-input" class="inf-form-label"
+                    >Treść uchwały</label
+                  >
+                </div>
+              </form>
+              <button class="add-uchwale" id="add-uchwale-4">
+                Dodaj uchwałę
+              </button>
+            </div>
+          </div>
+          <div ondblclick="Expand5()" class="uchwaly-box" id="goleszow">
+            <h2 id="uchwaly-title-5">Uchwała Goleszów</h2>
+            <span class="show-more" id="show-more-5"
+              ><p class="show-more-text" id="show-more-text-5">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-5"></div>
+            <div class="add-content" id="add-content-5">
+              <form class="form" autocomplete="off" method="post">
+                <div class="tytul">
+                  <input
+                    placeholder=" "
+                    class="inf-form-input"
+                    id="inf-title-input"
+                    type="text"
+                  />
+                  <label for="inf-title-input" class="inf-form-label"
+                    >Tytuł uchwały</label
+                  >
+                </div>
+                <div class="tytul">
+                  <textarea
+                    placeholder=" "
+                    id="inf-text-input"
+                    class="inf-form-input"
+                    type="text"
+                  ></textarea>
+                  <label for="inf-text-input" class="inf-form-label"
+                    >Treść uchwały</label
+                  >
+                </div>
+              </form>
+              <button class="add-uchwale" id="add-uchwale-5">
+                Dodaj uchwałę
+              </button>
+            </div>
+          </div>
+          <div ondblclick="Expand6()" class="uchwaly-box" id="hazlach">
+            <h2 id="uchwaly-title-6">Uchwała Hażlach</h2>
+            <span class="show-more" id="show-more-6"
+              ><p class="show-more-text" id="show-more-text-6">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-6"></div>
+            <div class="add-content" id="add-content-6">
+              <form class="form" autocomplete="off" method="post">
+                <div class="tytul">
+                  <input
+                    placeholder=" "
+                    class="inf-form-input"
+                    id="inf-title-input"
+                    type="text"
+                  />
+                  <label for="inf-title-input" class="inf-form-label"
+                    >Tytuł uchwały</label
+                  >
+                </div>
+                <div class="tytul">
+                  <textarea
+                    placeholder=" "
+                    id="inf-text-input"
+                    class="inf-form-input"
+                    type="text"
+                  ></textarea>
+                  <label for="inf-text-input" class="inf-form-label"
+                    >Treść uchwały</label
+                  >
+                </div>
+              </form>
+              <button class="add-uchwale" id="add-uchwale-6">
+                Dodaj uchwałę
+              </button>
+            </div>
+          </div>
+          <div ondblclick="Expand7()" class="uchwaly-box" id="strumien">
+            <h2 id="uchwaly-title-7">Uchwała Strumień</h2>
+            <span class="show-more" id="show-more-7"
+              ><p class="show-more-text" id="show-more-text-7">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-7"></div>
+            <div class="add-content" id="add-content-7">
+              <form class="form" autocomplete="off" method="post">
+                <div class="tytul">
+                  <input
+                    placeholder=" "
+                    class="inf-form-input"
+                    id="inf-title-input"
+                    type="text"
+                  />
+                  <label for="inf-title-input" class="inf-form-label"
+                    >Tytuł uchwały</label
+                  >
+                </div>
+                <div class="tytul">
+                  <textarea
+                    placeholder=" "
+                    id="inf-text-input"
+                    class="inf-form-input"
+                    type="text"
+                  ></textarea>
+                  <label for="inf-text-input" class="inf-form-label"
+                    >Treść uchwały</label
+                  >
+                </div>
+              </form>
+              <button class="add-uchwale" id="add-uchwale-7">
+                Dodaj uchwałę
+              </button>
+            </div>
+          </div>
+          <div ondblclick="Expand8()" class="uchwaly-box" id="ustron">
+            <h2 id="uchwaly-title-8">Uchwała Ustroń</h2>
+            <span class="show-more" id="show-more-8"
+              ><p class="show-more-text" id="show-more-text-8">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-8"></div>
+            <div class="add-content" id="add-content-8">
+              <form class="form" autocomplete="off" method="post">
+                <div class="tytul">
+                  <input
+                    placeholder=" "
+                    class="inf-form-input"
+                    id="inf-title-input"
+                    type="text"
+                  />
+                  <label for="inf-title-input" class="inf-form-label"
+                    >Tytuł uchwały</label
+                  >
+                </div>
+                <div class="tytul">
+                  <textarea
+                    placeholder=" "
+                    id="inf-text-input"
+                    class="inf-form-input"
+                    type="text"
+                  ></textarea>
+                  <label for="inf-text-input" class="inf-form-label"
+                    >Treść uchwały</label
+                  >
+                </div>
+              </form>
+              <button class="add-uchwale" id="add-uchwale-8">
+                Dodaj uchwałę
+              </button>
+            </div>
+          </div>
+          <div ondblclick="Expand9()" class="uchwaly-box" id="zebrzydowice">
+            <h2 id="uchwaly-title-9">Uchwała Zebrzydowice</h2>
+            <span class="show-more" id="show-more-9"
+              ><p class="show-more-text" id="show-more-text-9">Rozwiń</p>
+              <img
+                class="show-more-button"
+                id="show-more-button"
+                src="../pub/assets/image/expand-more-rounded.svg"
+                alt="Show-more"
+            /></span>
+            <div class="spacer" id="spacer-9"></div>
+            <div class="add-content" id="add-content-9">
+              <form class="form" autocomplete="off" method="post">
+                <div class="tytul">
+                  <input
+                    placeholder=" "
+                    class="inf-form-input"
+                    id="inf-title-input"
+                    type="text"
+                  />
+                  <label for="inf-title-input" class="inf-form-label"
+                    >Tytuł uchwały</label
+                  >
+                </div>
+                <div class="tytul">
+                  <textarea
+                    placeholder=" "
+                    id="inf-text-input"
+                    class="inf-form-input"
+                    type="text"
+                  ></textarea>
+                  <label for="inf-text-input" class="inf-form-label"
+                    >Treść uchwały</label
+                  >
+                </div>
+              </form>
+              <button class="add-uchwale" id="add-uchwale-9">
+                Dodaj uchwałę
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../pub/assets/js/admin_uchwaly.js"></script>
+  </body>
+</html>
