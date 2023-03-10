@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../pub/assets/css/podstrona.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/informacje.css">
+    <title>Informacje</title>
 </head>
 <body>
 
@@ -30,7 +30,7 @@
 
     <div class="banner-box">
 
-        <div class="banner"></div>
+        <div class="banner"><h1>Informacje</h1></div>
 
     </div>
 
@@ -40,31 +40,47 @@
 
             <div class="main-left">
 
-                <div class="main-left-pohotos-box">
+            <div class="main-left-whole">
 
-                    <div class="main-left-photo"></div>
-                    <div class="main-center-photo"></div>
-                    <div class="main-right-photo"></div>
+            <div class="main-information-image"><img src="assets/image/koparka.jpg" id="image-id"></div>
+            <div class="main-information-text">
 
-                </div>
+                <div class="main-information-text-date"><p>Sobota, 21.01.2023r. 20:36</p></div>
+                <div class="main-information-text-headline"><h1>Utrzymywanie urządzeń melioracji wodnych.</h1></div>
+                <div class="main-information-text-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dapibus facilisis porttitor. Aenean neque nibh, vulputate ut molestie nec, pretium a justo. Aenean pellentesque semper erat, eu efficitur diam porttitor facilisis. Quisque eu condimentum orci. Aliquam id odio quam. Sed libero purus, vestibulum in tincidunt ut, bibendum nec arcu. Nunc vitae interdum ipsum, id luctus ante. Quisque mattis id nisi in fringilla. Etiam luctus quam non tellus maximus suscipit. Nulla purus diam, cursus sit amet vehicula non, facilisis sed orci. Morbi scelerisque eget lacus ac congue.</p></div>
+                <div class="main-information-text-button"><button id="more-button">Czytaj więcej</button></div>
 
-                <div class="main-left-information-box">
+            </div>
 
-                    <div class="main-left-information-box-headline"><h1>Utrzymywanie urządzeń melioracji wodnych.</h1></div>
-                    <div class="main-left-information-box-date"><p>Sobota, 21.01.2023r.</p></div>
-                    <div class="main-left-information-box-text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus rutrum aliquam. Praesent in elementum magna, id suscipit enim. Sed volutpat neque euismod vulputate egestas. Duis vel ante vitae justo egestas consequat non vitae urna. Aenean molestie purus velit, id rutrum nulla dictum ut. Donec ut velit in nisl convallis rhoncus a in est. Donec sit amet nulla vel risus efficitur molestie vitae quis mauris. Donec sagittis finibus turpis, et pulvinar augue eleifend eu. Etiam vitae consectetur sapien, ut mattis arcu. Nulla facilisi.
-                            Praesent at porta risus. Integer et urna pharetra, molestie ante quis, venenatis risus. Curabitur aliquet nec dolor ac tempus. Cras eleifend mauris vestibulum dui ornare, in dignissim enim ultricies. Phasellus vitae lacinia justo, ut egestas orci. Sed vitae metus nec nunc scelerisque congue. Phasellus eget gravida lectus, id molestie nibh. Nullam felis dolor, vulputate eget vestibulum sit amet, porta ut nisi.
-                            Quisque aliquet enim non eros malesuada eleifend. Aliquam sagittis, velit et viverra placerat, orci erat aliquam erat, a viverra nisi neque quis quam. Pellentesque tempor id justo a bibendum. In hac habitasse platea dictumst. Sed eget gravida metus, ut tempus nisi. Praesent nec purus ut est vulputate vestibulum. Mauris malesuada ante ac dignissim pellentesque. Quisque hendrerit dui ut efficitur imperdiet. Mauris varius aliquam tellus, in tincidunt odio ornare non. Maecenas sit amet aliquam enim.
-                            Aenean eget posuere lectus. Maecenas varius massa enim. Etiam ac blandit enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id rutrum orci. Cras faucibus laoreet accumsan. Integer volutpat vel ligula nec maximus. Duis sed lobortis justo, vel pretium dui.
-                        </p>
-                    </div>
+</div>
 
-                    <div class="main-left-information-box-zalacznik-title"><h2>Załącznik:</h2></div>
-                    <div class="main-left-information-box-zalacznik"><p>Brak załączników do pobrania.</p></div>
-                
-                </div>
+<div class="main-left-whole">
+
+<div class="main-information-image"><img src="assets/image/koparka.jpg" id="image-id"></div>
+<div class="main-information-text">
+
+    <div class="main-information-text-date"><p>Sobota, 21.01.2023r. 20:36</p></div>
+    <div class="main-information-text-headline"><h1>Utrzymywanie urządzeń melioracji wodnych.</h1></div>
+    <div class="main-information-text-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dapibus facilisis porttitor. Aenean neque nibh, vulputate ut molestie nec, pretium a justo. Aenean pellentesque semper erat, eu efficitur diam porttitor facilisis. Quisque eu condimentum orci. Aliquam id odio quam. Sed libero purus, vestibulum in tincidunt ut, bibendum nec arcu. Nunc vitae interdum ipsum, id luctus ante. Quisque mattis id nisi in fringilla. Etiam luctus quam non tellus maximus suscipit. Nulla purus diam, cursus sit amet vehicula non, facilisis sed orci. Morbi scelerisque eget lacus ac congue.</p></div>
+    <div class="main-information-text-button"><button id="more-button">Czytaj więcej</button></div>
+
+</div>
+
+</div>
+
+<div class="main-left-whole">
+
+<div class="main-information-image"><img src="assets/image/koparka.jpg" id="image-id"></div>
+<div class="main-information-text">
+
+    <div class="main-information-text-date"><p>Sobota, 21.01.2023r. 20:36</p></div>
+    <div class="main-information-text-headline"><h1>Utrzymywanie urządzeń melioracji wodnych.</h1></div>
+    <div class="main-information-text-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dapibus facilisis porttitor. Aenean neque nibh, vulputate ut molestie nec, pretium a justo. Aenean pellentesque semper erat, eu efficitur diam porttitor facilisis. Quisque eu condimentum orci. Aliquam id odio quam. Sed libero purus, vestibulum in tincidunt ut, bibendum nec arcu. Nunc vitae interdum ipsum, id luctus ante. Quisque mattis id nisi in fringilla. Etiam luctus quam non tellus maximus suscipit. Nulla purus diam, cursus sit amet vehicula non, facilisis sed orci. Morbi scelerisque eget lacus ac congue.</p></div>
+    <div class="main-information-text-button"><button id="more-button">Czytaj więcej</button></div>
+
+</div>
+
+</div>
 
             </div>
 
@@ -88,7 +104,7 @@
             <div class="main-right-informacje-desc">
 
                 <div class="informacje-text"><p>Informacje</p></div>
-                <div class="informacje-button"><a href="../html/informacje.html"><button id="show-button">Zobacz wszystkie</button></a></div>
+                <div class="informacje-button"><button id="show-button">Zobacz wszystkie</button></div>
 
             </div>
 
@@ -141,8 +157,6 @@
         </div>
 
     </div>
-
-    
 
 </body>
 </html>
