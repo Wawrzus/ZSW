@@ -12,6 +12,11 @@
     overflow-x: hidden;
 }
 
+a
+{
+    text-decoration: none;
+}
+
 html
 {
     font-family: 'Poppins', sans-serif;
@@ -40,6 +45,20 @@ body
     gap: 30px;
     color: white;
     font-size: 22px;
+}
+
+.up-navbar li
+{
+    color: white;
+    border-bottom: solid 4px #DA4525;
+}
+
+.up-navbar li:hover
+{
+    color: var(--color-black);
+    cursor: pointer;
+    border-bottom: solid 4px var(--color-black);
+    transition-duration: 0.3s;
 }
 
 #up-navbar-home
@@ -308,16 +327,4 @@ body
 .main-right-informacje-text-header h1
 {
     font-size: 15px;
-}
-
-footer
-{
-    margin-top: 10px;
-    height: 30px;
-    width: 100%;
-    background-color: var(--color-red);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
 }

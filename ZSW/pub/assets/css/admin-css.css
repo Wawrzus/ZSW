@@ -17,6 +17,7 @@ html {
 
 body {
   background-color: rgb(247, 247, 247);
+  box-sizing: border-box;
 }
 
 main {
@@ -24,14 +25,10 @@ main {
   justify-content: center;
 }
 
-#informacje {
-  background-color: var(--color-red-active);
-}
-
 .left-menu {
   background-color: var(--color-red);
-  width: 220px;
-  min-width: 220px;
+  width: 280px;
+  min-width: 280px;
   height: 100vh;
 }
 
@@ -47,7 +44,7 @@ main {
 .menu a {
   padding: 10px 0;
   width: 100%;
-  padding-left: 13%;
+  padding-left: 15%;
   cursor: pointer;
   text-decoration: none;
   color: white;
@@ -66,7 +63,7 @@ main {
 .menu > ul > li {
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .left-menu img {
@@ -76,9 +73,8 @@ main {
 }
 
 .button-area img {
-  width: 16px;
-  padding-right: 3px;
-  padding-bottom: 3px;
+  width: 20px;
+  padding-right: 5px;
 }
 
 #sign-out-button {
@@ -86,7 +82,7 @@ main {
   padding: 10px 0;
   border: transparent;
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
   background-color: transparent;
   transition: 0.2s;
@@ -110,25 +106,23 @@ main {
   border-radius: 5px;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 15%);
   background-color: white;
-  padding: 15px 10px;
-  font-size: 22px;
+  padding: 15px 20px;
+  font-size: 24px;
 }
 
 .up-navbar h1 img {
-  cursor: pointer;
-  width: 35px;
-  padding-right: 5px;
+  padding-right: 10px;
   vertical-align: middle;
 }
 
 .information-input-box {
   display: flex;
-  padding: 2px 0 25px 0;
+  padding: 5px 0 25px 0;
   width: 100%;
 }
 
 .informations {
-  margin-inline: 20px;
+  margin-left: 20px;
   width: 100%;
   min-width: 600px;
   background-color: white;
@@ -143,7 +137,6 @@ main {
 }
 
 .inf-form-input {
-  font-size: 16px;
   width: 100%;
   border: 1px solid black;
   outline: none;
@@ -155,23 +148,19 @@ main {
   color: var(--color-red);
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -30%);
   left: 50%;
+  transition: 0.1s;
 }
 
 #inf-title-input {
-  box-sizing: border-box;
-  width: 100%;
-  font-size: 18px;
   height: 40px;
-  padding-inline: 10px;
   margin: 20px 0 10px 0;
   font-weight: bold;
+  font-weight: 20px;
 }
 
 #inf-text-input {
-  box-sizing: border-box;
-  padding: 10px;
   min-height: 250px;
 }
 
@@ -198,8 +187,8 @@ input[type="file"] {
 }
 
 #add-inf {
-  font-size: 16px;
   margin: 20px 10px;
+  font-size: 14px;
   font-weight: bold;
   padding: 5px 10px;
   background-color: transparent;
@@ -217,19 +206,16 @@ input[type="file"] {
   background-color: var(--color-red);
   border: 2px solid transparent;
   color: white;
-  cursor: pointer;
 }
+
+/* #add-inf img {
+  padding-right: 5px;
+  vertical-align: middle;
+} */
 
 #attachment-title {
+  font-size: 12px;
   color: var(--color-red);
-}
-
-#add-images-text {
-  color: black;
-}
-
-.add-images-btn-area {
-  padding: 0 10px;
 }
 
 .add-attachment img {
@@ -237,18 +223,32 @@ input[type="file"] {
   width: 30px;
   cursor: pointer;
   position: absolute;
-  top: 60%;
+  top: 58%;
   transform: translateY(-50%);
   left: 10px;
 }
 
+.add-attachment {
+}
+
 .images-input-box {
-  margin-right: 20px;
+  margin: 0 20px;
   width: 230px;
   min-width: 230px;
   background-color: white;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 15%);
   border-radius: 5px;
+  padding: 20px 10px;
+}
+
+.informations-table-area {
+  padding: 5px 20px 10px 20px;
+}
+
+.informations-table {
+  width: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 15%);
 }
 
 .box-title {
@@ -261,102 +261,12 @@ input[type="file"] {
 .inf-title {
   margin-left: 20px;
   width: 100%;
-  min-width: 600px;
+  min-width: 620px;
 }
 
 .img-title {
   margin: 0 20px;
   width: 230px;
   min-width: 230px;
-}
-
-.informations-table-area {
-  padding: 2px 20px 10px 20px;
-}
-
-.informations-table {
-  background-color: white;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 15%);
-  overflow-y: auto;
-  overflow-x: auto;
-  border-radius: 5px;
-  max-height: 600px;
-}
-
-.table-output {
-  border-radius: 5px 5px 0 0;
-  width: 100%;
-  border-collapse: collapse;
-  overflow: hidden;
-  text-align: center;
-  font-size: 14px;
-}
-.table-output thead tr {
-  background-color: var(--color-red);
-  color: white;
-  font-size: 14px;
-}
-
-#table-inf-titles {
-  text-align: left;
-  min-width: 300px;
-}
-
-#tresc {
-  color: var(--color-red);
-  text-decoration: none;
-}
-
-#table-tresc {
-  width: 120px;
-  min-width: 80px;
-}
-
-#data {
-  width: 260px;
-  min-width: 160px;
-  text-align: left;
-}
-
-#usun {
-  width: 140px;
-  min-width: 100px;
-}
-
-#data span {
-  padding-left: 10px;
-}
-
-#data img {
-  vertical-align: middle;
-  width: 15px;
-  padding-right: 5px;
-  padding-bottom: 3px;
-}
-
-#usun img {
-  vertical-align: middle;
-  width: 15px;
-  padding-right: 5px;
-  padding-bottom: 4px;
-}
-
-#usun button {
-  background-color: transparent;
-  border: transparent;
-  outline: none;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.table-output th,
-.table-output td {
-  padding: 10px 10px;
-}
-
-.table-output tbody tr {
-  border-bottom: 1px solid var(--color-red);
-}
-.table-output tbody tr:last-of-type {
-  border-bottom: 2px solid var(--color-red-active);
+  padding-right: 20px;
 }

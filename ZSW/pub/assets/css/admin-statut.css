@@ -123,7 +123,6 @@ main {
 }
 
 .statut-box h2 {
-  cursor: default;
   font-size: 22px;
   text-align: left;
 }
@@ -140,7 +139,7 @@ main {
 .statut-box {
   width: 50%;
   min-width: 350px;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 5px 20px;
   background-color: white;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 15%);
@@ -169,31 +168,31 @@ input[type="file"] {
   font-size: 12px;
 }
 
-.show-more-text {
+#show-more-text {
   position: absolute;
   top: 13px;
   font-size: 14px;
   right: 42px;
 }
 
-.show-more-button {
+#show-more-button {
   position: absolute;
   top: 14px;
   right: 20px;
   width: 20px;
 }
-.show-more {
+#show-more {
   border-radius: 10px;
 }
-.show-more:hover {
+#show-more:hover {
   cursor: pointer;
 }
 
-.attachment-title {
+#attachment-title {
   color: var(--color-red);
 }
 
-.add-inf {
+#add-inf {
   display: none;
   font-size: 16px;
   margin: 20px 10px;
@@ -210,7 +209,7 @@ input[type="file"] {
   transition: 0.2s;
 }
 
-.add-inf:hover {
+#add-inf:hover {
   background-color: var(--color-red);
   border: 2px solid transparent;
   color: white;
